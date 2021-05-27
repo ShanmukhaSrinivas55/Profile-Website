@@ -1,0 +1,249 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #FFF;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #6633ff;
+}
+#more
+ {
+	 
+	 display: none;
+	 
+}
+
+.card .post-img{
+	 
+	
+	float:right;
+	width:100px;
+	height:80px;
+	position:relative;
+	left:20px;
+	top:9px;
+	padding-right:10px;
+	
+}
+.card .card1{
+	
+	float:left;
+	width:150px;
+}
+.card .card1 a{
+	
+	color: #222;
+	
+}
+.card .card1 a:hover{
+	
+	color:#1167a8;;
+	
+}
+.clear{
+	
+	clear:both;
+	
+}
+header {
+  text-align: center;
+  background: url('bg.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: visible;
+  padding-top: 60px;
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 120px;
+  height: 120px;
+  border: 3px solid white;
+  transition: all .5s;
+  position:relative;
+  top:70px;
+ }
+header .profile-image:hover {
+  transform: scale(1.1) rotate(0deg);
+}
+.tag {
+  background-color: #efefef;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+  position:relative;
+  top:60px;
+  
+} 
+.name{
+	
+	font-size:15px;
+	
+	
+	
+	
+}
+.tag1 {
+  
+  color:black;
+  padding: 10px;
+  
+  display: table;
+  
+  position:relative;
+  top:100px;
+  left:80px;
+  
+} 
+.name1{
+	
+	font-size:20px;
+	
+	
+	
+	
+}
+
+.card {
+  height:300px;
+  margin:30px;
+  padding: 20px 20px 10px;
+  max-width: 1000px;
+  text-align: left;
+  background: #fff;
+  border: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  position:relative;
+  top:40px;
+  overflow:auto;
+}
+.card:hover {
+  border-color: #ff99ff;
+}
+
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+header .profile-image {
+	
+	
+	max-width:1200px;
+	display:flex;
+	position:absolute;
+	right:45%;
+	top:55%;
+	width: 180px;
+    height: 180px;
+	position:relative;
+    top:180px;
+    left:645px;	
+  }
+  
+  .tag {
+	  
+	position:relative;
+    top:110px;
+    left:-20px;	
+	
+ }
+ .name{
+ 
+    font-size:20px;
+		
+ 
+ }
+ 
+ .card{
+	 
+	 position:relative;
+     top:60px;
+	 width:500px;
+	 
+}
+ .card .post-img{
+	 
+	
+	float:right;
+	width:100px;
+	height:80px;
+	position:relative;
+	left:-50px;
+	top:5px;
+	padding-bottom:10px;
+	
+}
+ .card .card1{
+	
+	float:left;
+	width:300px;
+	
+}
+
+.tag1 {
+  
+ 
+  position:relative;
+  top:150px;
+  left:500px;
+  
+}
+.name1{
+	
+	font-size:30px;
+	
+  position:relative;
+    left:645px;
+	
+	
+	
+} 
+}

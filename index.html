@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Your Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+  <body>
+
+    <header>
+
+	   <p><h1 class="tag1 name1">Your Name</h1></p>
+      <img src="profilepic.jpg" alt="image of profile" class="profile-image">
+    </header>
+
+	<p><h1 class="tag name">Your Profession</h1></p>
+
+    <main class="flex">
+      <div class="card">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<span id="dots">...</span><span id="more"> Cursus turpis massa tincidunt dui. Ut consequat semper viverra nam libero justo laoreet. Blandit cursus risus at ultrices mi tempus. Urna nunc id cursus metus aliquam eleifend mi. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Est sit amet facilisis magna. Mi quis hendrerit dolor magna eget est lorem ipsum. Duis ultricies lacus sed turpis tincidunt id. Nulla at volutpat diam ut. Ut faucibus pulvinar elementum integer enim neque volutpat. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.</span></p>
+      <button onclick="myFunction()" id="myBtn">Read more</button>
+	  </div>
+      <div class="card">
+        <h2>Posts</h2>
+
+		<div class="card1"><p><a href="">How to build your First Website using HTML,CSS,JS</a></p></div>
+		<img class="post-img" src="website.jpg" alt="webpic">
+		<div class="clear"></div>
+		<div class="card1"><p><a href="">Web Development Roadmap- Where to start with?</a></p></div>
+		<img class="post-img" src="rm.jpg" alt="roadmap pic">
+      </div>
+
+    </main>
+	<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+  </body>
+  </html>
